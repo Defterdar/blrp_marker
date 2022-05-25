@@ -21,7 +21,7 @@ end
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
-		for i = 1, #locations, 1 do
+		for i = 1, #config, 1 do
 			loc = locations[i]
                 
 			local playerCoord = GetEntityCoords(PlayerPedId(), false)
