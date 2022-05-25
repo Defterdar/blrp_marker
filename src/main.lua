@@ -1,5 +1,5 @@
 -- https://runtime.fivem.net/doc/natives/?_0x28477EC23D892089
--- locations set in locations.lua
+-- locations set in config.lua
 
 local QBCore = exports['qb-core']:GetCoreObject()
 
