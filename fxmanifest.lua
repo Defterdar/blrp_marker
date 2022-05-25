@@ -5,4 +5,4 @@ author 'Defterdar'
 description 'Simple Marker Resource'
 version '1.0.3'
 
-client_script "src/*.lua"
+client_script "client/*.lua"
