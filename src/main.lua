@@ -28,7 +28,7 @@ Citizen.CreateThread(
                 local playerCoord = GetEntityCoords(PlayerPedId(), false)
                 local locVector = vector3(loc.pos.x, loc.pos.y, loc.pos.z)
 
-                if loc.type == QBCore.Functions.GetPlayerData().job.name or loc.type == nil then
+                if loc.type == QBCore.Functions.GetPlayerData().job.name or loc.type == "" then
                     if Vdist2(playerCoord, locVector) < 150 then
                         DrawMarker(loc.marker,loc.pos.x,loc.pos.y,loc.pos.z-0.75,0.0,0.0,0.0,0.0,0.0,0.0,loc.scale,loc.scale,loc.scale,loc.rgba[1],loc.rgba[2],loc.rgba[3],loc.rgba[4],false,true,2,nil,nil,false)
                     end
