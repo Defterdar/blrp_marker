@@ -20,28 +20,35 @@ end
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(1)
-		for i = 1, #config, 1 do
+		Citizen.Wait(1000)
+		for i = 1, #locations, 1 do
 			loc = locations[i]
-                
-			--local playerCoord = GetEntityCoords(PlayerPedId(), false)
-			--local locVector = vector3(loc.pos.x, loc.pos.y, loc.pos.z)
 
 			if loc.job == QBCore.Functions.GetPlayerData().job.name or loc.job == "" then
 
 				local playerCoord = GetEntityCoords(PlayerPedId(), false)
-                        	local locVector = vector3(loc.pos.x, loc.pos.y, loc.pos.z)
-
+                local locVector = vector3(loc.pos.x, loc.pos.y, loc.pos.z)
 				dist = #(playerCoord - locVector)
 
-				if Vdist2(playerCoord, locVector) < 150 then
+				while dist < 5 do
+					Citizen.Wait(1)
 					DrawMarker(loc.marker,loc.pos.x,loc.pos.y,loc.pos.z-0.75,0.0,0.0,0.0,0.0,0.0,0.0,loc.scale,loc.scale,loc.scale,loc.rgba[1],loc.rgba[2],loc.rgba[3],loc.rgba[4],false,true,2,nil,nil,false)
-				end
-                    
-				--if Vdist2(playerCoord, locVector) < loc.dist then
-				if dist < loc.dist then
 					DrawText3D(loc.pos.x,loc.pos.y,loc.pos.z,loc.text)
+					exports['qb-core']:HideText()
+
+					local playerCoord = GetEntityCoords(PlayerPedId(), false)
+                    local locVector = vector3(loc.pos.x, loc.pos.y, loc.pos.z)
+
+                    dist = #(playerCoord - locVector)
 				end
+				--if dist < 5 then
+				--	DrawMarker(loc.marker,loc.pos.x,loc.pos.y,loc.pos.z-0.75,0.0,0.0,0.0,0.0,0.0,0.0,loc.scale,loc.scale,loc.scale,loc.rgba[1],loc.rgba[2],loc.rgba[3],loc.rgba[4],false,true,2,nil,nil,false)
+                    
+				--	if dist < loc.dist then
+				--		DrawText3D(loc.pos.x,loc.pos.y,loc.pos.z,loc.text)
+				--		exports['qb-core']:HideText()
+				--	end
+				--end
 			end
 		end
 	end
