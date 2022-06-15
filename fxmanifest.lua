@@ -3,6 +3,6 @@ game 'gta5'
 
 author 'Defterdar'
 description 'Simple Marker Resource'
-version '1.0.3'
+version '1.0.5'
 
 client_script "client/*.lua"
