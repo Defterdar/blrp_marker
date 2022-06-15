@@ -41,14 +41,6 @@ Citizen.CreateThread(function()
 
                     dist = #(playerCoord - locVector)
 				end
-				--if dist < 5 then
-				--	DrawMarker(loc.marker,loc.pos.x,loc.pos.y,loc.pos.z-0.75,0.0,0.0,0.0,0.0,0.0,0.0,loc.scale,loc.scale,loc.scale,loc.rgba[1],loc.rgba[2],loc.rgba[3],loc.rgba[4],false,true,2,nil,nil,false)
-                    
-				--	if dist < loc.dist then
-				--		DrawText3D(loc.pos.x,loc.pos.y,loc.pos.z,loc.text)
-				--		exports['qb-core']:HideText()
-				--	end
-				--end
 			end
 		end
 	end
