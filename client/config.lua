@@ -6,7 +6,6 @@ locations = {
         marker	= 23,
         scale 	= 1.0,
         job 	= "police",
-	    grade	= 2,
         dist	= 4,
         rgba 	= {120, 255, 120, 155},
         text 	= "Tryk ~g~[E]~w~ Debug message"
