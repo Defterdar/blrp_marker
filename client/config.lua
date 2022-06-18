@@ -47,7 +47,7 @@ locations = {
         text 	= "~g~[E]~w~ Clothing"
     },
     {
-    	pos	    = {x= 311.14, y= -599.42, z= 43.29},
+    	pos	    = {x= 311.14, y= -599.42, z= 43.29},--
         marker	= 1,
         scale 	= 0.0,
         job 	= "ambulance",
@@ -65,7 +65,7 @@ locations = {
         text 	= "~g~[E]~w~ Elevator"
     },
     {
-    	pos	    = {x= 440.11, y= -975.74, z= 30.69},
+    	pos	    = {x= 440.08, y= -974.01, z= 30.69},
         marker	= 1,
         scale 	= 0.0,
         job 	= "police",
@@ -74,7 +74,7 @@ locations = {
         text 	= "~g~[E]~w~ Toggle duty"
     },
     {
-    	pos	    = {x= 452.36, y= -980.17, z= 30.69},
+    	pos	    = {x= 460.09, y= -999.21, z= 30.69},
         marker	= 1,
         scale 	= 0.0,
         job 	= "police",
@@ -83,7 +83,7 @@ locations = {
         text 	= "~g~[E]~w~ Enter Locker"
     },
     {
-    	pos	    = {x= 461.87, y= -981.09, z= 30.69},
+    	pos	    = {x= 482.67, y= -997.3, z= 30.69},
         marker	= 1,
         scale 	= 0.0,
         job 	= "police",
@@ -92,8 +92,7 @@ locations = {
         text 	= "~g~[E]~w~ Armory"
     },
     {
-    	pos	    = {x= 454.38, y= -988.81, z= 30.69},
-        marker	= 1,
+    	pos	    = {x= 463.12, y= -996.71, z= 30.69},
         scale 	= 0.0,
         job 	= "police",
         dist 	= 4,
@@ -101,7 +100,7 @@ locations = {
         text 	= "~g~[E]~w~ Clothing"
     },
     {
-    	pos	= {x= 455.19, y= -985.4, z= 30.69},
+    	pos	= {x= 474.52, y= -990.69, z= 26.27},
         marker	= 1,
         scale 	= 0.0,
         job 	= "police",
@@ -110,7 +109,7 @@ locations = {
         text 	= "~g~[Evidence 3] "
     },
     {
-    	pos	    = {x= 448.13, y= -1018.47, z= 28.56},
+    	pos	    = {x= 457.42, y= -991.7, z= 25.7},-
         marker	= 23,
         scale 	= 1.0,
         job 	= "police",
@@ -119,7 +118,7 @@ locations = {
         text 	= "~g~[Police Garage] "
     },
     {
-    	pos	    = {x= 441.99, y= -995.67, z= 30.69},
+    	pos	    = {x= 447.39, y= -996.96, z= 30.69},
         marker	= 23,
         scale 	= 0.0,
         job 	= "police",
@@ -128,7 +127,7 @@ locations = {
         text 	= "~g~[Evidence 1] "
     },
     {
-    	pos	    = {x= 451.56, y= -973.23, z= 30.69},
+    	pos	    = {x= 450.25, y= -997.6, z= 30.69},
         marker	= 23,
         scale 	= 0.0,
         job 	= "police",
@@ -137,7 +136,7 @@ locations = {
         text 	= "~g~[Evidence 2] "
     },
     {
-	    pos     = {x= 448.98, y= -974.69, z= 30.69},
+	    pos     = {x= 463.37, y= -985.17, z= 30.69},
         marker	= 23,
         scale 	= 0.0,
         job 	= "police",
